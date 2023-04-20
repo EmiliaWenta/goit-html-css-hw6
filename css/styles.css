@@ -751,10 +751,6 @@ input[placeholder="E-mail"] {
   color: var(--color-p);
 }
 
-.input-with-icon:focus {
-  border-color: red;
-  fill: red;
-}
 .form-in-modal {
   max-width: 448px;
   margin: 0 auto;
@@ -849,42 +845,18 @@ label > span {
   cursor: pointer;
 }
 
-.input-with-icon {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.input-with-icon svg {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-with-icon input {
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-with-icon:hover svg,
-.input-with-icon:focus svg {
-  fill: var(--color-blue);
-}
-
-.input-with-icon:hover input,
-.input-with-icon:focus input {
-  border-color: var(--color-blue);
-}
-
 textarea {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 textarea:focus,
 textarea:hover {
+  border-color: var(--color-blue);
+}
+textarea:focus-within {
   border-color: var(--color-blue);
 }
 
@@ -894,11 +866,36 @@ textarea:hover {
   padding-left: 36px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-in-input {
   position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 418px;
   left: 12px;
+  top: 29px;
   width: 18px;
   height: 18px;
   fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus,
+.contact-form-input:hover {
+  border-color: var(--color-blue);
+}
+
+.icon-in-input:focus,
+.icon-in-input:hover {
+  fill: var(--color-blue);
+}
+
+.form-label {
+  position: relative;
 }
