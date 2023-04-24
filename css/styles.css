@@ -662,10 +662,6 @@ img {
   height: 50px;
 }
 
-.input-email-type:focus-within {
-  border-color: var(--color-blue);
-}
-
 .input-email-type:focus,
 .input-email-type:hover {
   border-color: var(--color-blue);
@@ -673,6 +669,8 @@ img {
 
 .input-email-type {
   outline: none;
+  transition-property: border-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[placeholder="E-mail"] {
