@@ -229,7 +229,7 @@ figcaption h4 {
 }
 
 .order-button {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -556,7 +556,7 @@ img {
 
 .join-us p {
   color: var(--color-white);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
@@ -629,7 +629,7 @@ img {
 
 .subscribe-newsletter p {
   color: var(--color-white);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
@@ -653,6 +653,7 @@ img {
   color: var(--color-white);
   cursor: pointer;
   outline: none;
+  font-weight: 700;
 }
 
 .input-email {
