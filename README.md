@@ -1,2 +1,3 @@
-# goit-markup-hw-06
-zadanie domowe nr 6 z kursu
+# goit-html-css-hw6
+Purpose of the task was:
+- create form.
